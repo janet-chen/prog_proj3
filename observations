@@ -1,0 +1,23 @@
+Hypotheses regarding s01 - s09 
+
+//this is taking the derivative of the graph
+0 to n (one key): insert / find 
+s01: constant / c 
+s02: linear / c
+s03: constant / c
+s04: constant / c
+s05: constant / c 
+s06: constant / c
+s07: constant /c 
+
+
+s03 — u r so slow
+
+test2: find and insert with key = i, i to n (can’t take derivative — described as seen) 
+s01: two distinct constant lines — perhaps hash
+s02: constant (near 0) and suddenly linear around 100 000
+s03: hash table??? 
+s04: exponential
+s05: exponential and then linear
+s06: linear and then log n
+s07: broken off linear ones 
