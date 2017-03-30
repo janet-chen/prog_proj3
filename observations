@@ -32,6 +32,16 @@ s05: avl - AVL tree
 s06: hch - hashtable with chaining (fixed size 10000)
 s07: sl - sorted vector
 
+//Janet
+From my tests: 
+s01:spt
+s02:mtf
+s03:sl
+s04:bstT
+s05:AVL tree
+s06:hch
+s07:hqp
+
 gen0: insert and then find from 1 to n
 s01: two separate lines -> finding is faster than inserting? -> splay tree?
 s02: constant and then linear -> constant insert and linear search?
