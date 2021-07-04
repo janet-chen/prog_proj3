@@ -21,3 +21,91 @@ s04: exponential
 s05: exponential and then linear
 s06: linear and then log n
 s07: broken off linear ones 
+//Janet
+s01:spt
+s02:mtf
+s03:sl
+s04:bstT
+s05:AVL tree
+s06:hch
+s07:hqp
+
+// Michael
+From my test:
+s01: spt - Splay tree
+s02: mtf - unsorted linked list with move-to-front on find
+s03: bstT - Binary search tree with tombstones (change to Janet’s)
+s04: hqp - Hashtable with double hashing (resizing) 
+s05: avl - AVL tree
+s06: hch - hashtable with chaining (fixed size 10000)
+s07: sl - sorted vector (resizing array)
+
+//Janet
+From my tests: 
+s01:spt
+s02:mtf
+s03:sl
+s04:bstT
+s05:AVL tree
+s06:hch
+s07:hqp
+
+gen0: insert and then find from 1 to n
+s01: two separate lines -> finding is faster than inserting? -> splay tree?
+s02: constant and then linear -> constant insert and linear search?
+s03: step like graph and linear after 100000 -> resizing first?
+s04: exponential
+s05: exponential then linear
+s06: linear then steep jump
+s07: linear lines starting at different points -> resizing?
+
+gen1: insert and find in decreasing order
+s01: two separate lines
+s02: straight line on the x-axis -> input too big?
+s03: exponential
+s04: exponential (steeper than s03)
+s05: linear with a kink
+s06: linear then steep jump
+s07: same as above
+
+gen2: insert and remove with random numbers (n = 10000)
+s01: linear line
+s02: constant
+s03: exponential
+s04: linear with a kink
+s05: linear
+s06: same as before
+s07: same as before
+
+gen3: insert with random numbers (n = 1200000)
+s01: linear
+s02: linear
+s03: exponential
+s04: linear
+s05: linear
+s06: linear
+s07: same as previous generators
+
+gen4: insert & remove from 1 to n
+s01: linear
+s02: linear with a kink
+s03: linear
+s04: linear
+s05: linear
+s06: linear
+s07: linear
+all about O(nlogn) based on bigocheatsheet.com
+
+gen5: insert, find random & remove from 1 to n
+s01: linear
+s02: constant until around 10000 and then linear (hash table with chaining?)
+s03: linear
+s04: linear
+s05: linear
+s06: linear and then multiple linear lines at different points
+s07: linear
+
+gen06: insert 1 to n, remove 1 to n/2 random and then find from 1 to n/2
+s03: constant, then linear and then constant
+s04: exponential
+s07: constant steps
